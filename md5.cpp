@@ -100,7 +100,7 @@ void MD5::sort_little_endian() {
 void MD5::appendLength() {
     bin_msg.insert(bin_msg.end(), bin_b.begin() + 32, bin_b.end());
     bin_msg.insert(bin_msg.end(), bin_b.begin(), bin_b.begin() + 32);
-};
+}
 
 void MD5::decode(int beginIndex, bit32* x) {
     // prepare each 512 bits part in the x[16], and use the x[] for the
